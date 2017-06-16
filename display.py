@@ -11,7 +11,6 @@ def convert_list(dist):
 
 fargo_words = pickle.load(open('../case_study_data/fargo_dist.p', 'rb'))
 other_words = pickle.load(open('../case_study_data/other_dist.p', 'rb'))
-print fargo_words == other_words
 pickle.dump(convert_list(fargo_words), open('../case_study_data/fargo_dist_l.p', 'wb'))
 pickle.dump(convert_list(other_words), open('../case_study_data/other_dist_l.p', 'wb'))
 
